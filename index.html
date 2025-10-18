@@ -1,140 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Personal Website</title>
-
-  <!-- Google Fonts: include Noto Sans Bengali for Bengali support -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-8Lh0Hq7cJbtdq2w0o8Gm9rP+P5g6mF9aC2wKqE3rT4H2dP+R2JQk5cZsG7vPzQy8eF6vYtA1JmC3T8m9rFJ3xg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-  <link rel="stylesheet" href="assets/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার বই ওয়েবসাইট</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="#home" class="brand">My Site</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <nav class="site-nav" aria-label="Primary">
+    <!-- Navigation -->
+    <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
+    </nav>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="container hero-container">
-      <h1 class="title">Hello, I’m Your Name</h1>
-      <p class="subtitle">A simple, responsive personal website</p>
-      <div class="hero-actions">
-        <a href="#about" class="btn primary">Learn More</a>
-        <a href="#contact" class="btn outline">Get in Touch</a>
-      </div>
-    </div>
-  </section>
+    <!-- Page Title -->
+    <header>
+        <h1 class="page-title">আমার বইয়ের শিরোনাম</h1>
+        <div class="heart">💔</div>
+    </header>
 
-  <!-- Editable Content Area with Animated Header (Bengali-supported) -->
-  <section id="content" class="section">
-    <div class="container">
-      <h2 class="animated-header">আজকের ভাবনা</h2>
+    <!-- Editable Content Area -->
+    <main contenteditable="true">
+        এখানে আপনি যেকোনো বাংলা লেখা লিখতে পারবেন। এটা সম্পূর্ণ editable।
+    </main>
 
-      <!-- Highlighted central line with "=" and message -->
-      <div class="eq-highlight" aria-label="Highlighted message">
-        <span class="eq-sign">=</span>
-        <span class="eq-text">Sorry, আমাকে ভালোবাসলে না</span>
-      </div>
+    <!-- Bottom Message -->
+    <div class="bottom-message" id="bottomMessage">এই হলো আপনার bottom message!</div>
 
-      <div class="card content-card">
-        <!-- Reintroduced three-dot side icon, smaller and positioned toward the top -->
-        <button class="ellipsis-menu" id="ellipsisMenu" aria-label="Options" aria-haspopup="true" aria-expanded="false">…</button>
-        <div class="ellipsis-popover" id="ellipsisPopover" role="tooltip">Sorry, আমাকে ভালোবাসলে না</div>
-
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Your Name · All rights reserved</p>
+        <p>Contact: <a href="mailto:you@example.com">you@example.com</a></p>
         <p>
-          এই অংশটি সম্পূর্ণভাবে সম্পাদনাযোগ্য। আপনি এখানে আপনার যে কোনো লেখা, নোট বা চিন্তা লিখতে পারবেন।
-          বাংলা টেক্সট সম্পূর্ণভাবে সমর্থিত, এবং সাদা রঙের সাথে সূক্ষ্ম টেক্সট-শ্যাডো ব্যবহার করা হয়েছে যাতে
-          রেইনবো ব্যাকগ্রাউন্ডেও পড়তে সুবিধা হয়।
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">YouTube</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">GitHub</a>
         </p>
-        <p>
-          চাইলে আপনি আরও অনুচ্ছেদ, ছবি বা লিঙ্ক যোগ করতে পারেন। এই জায়গাটি আপনার—
-          ইচ্ছে মতো লিখুন এবং পরিবর্তন করুন।
-        </p>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About</h2>
-      <p class="section-subtitle">A brief introduction</p>
-      <div class="card">
-        <p>
-          Replace this with your bio. Share who you are, what you do, and what you care about.
-          This template includes a fixed, responsive navigation bar and an animated rainbow background
-          with readable text across all colors.
-        </p>
-        <p>
-          You can customize colors, fonts, and content directly in the HTML/CSS. It’s ready for GitHub Pages—
-          just push the repository and enable Pages.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-subtitle">Let’s connect</p>
-
-      <div class="card contact-card">
-        <div class="contact-info">
-          <p><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
-          <!-- Phone removed per requirement -->
-        </div>
-
-        <div class="social-links">
-          <a href="#" aria-label="Facebook" class="social"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram" class="social"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Twitter / X" class="social"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" aria-label="YouTube" class="social"><i class="fab fa-youtube"></i></a>
-          <a href="#" aria-label="LinkedIn" class="social"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="GitHub" class="social"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
- <<footer class="site-footer">
-   <<div class="container footer-container">
-     <<p>&copy; 2025 Your Name · All rights reserv.</</p>
-     <<p>Contact <<a href="mailto:you@example.com">you@example.com</a> · <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-    </div>
-  </footer>
-
-  <!-- Back to Top Button -->
-  <button id="backToTop" class="back-to-top" aria-label="Back to top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-
-  <!-- Bottom Popup Message -->
-  <div id="bottomPopup" class="bottom-popup" role="status" aria-live="polite">
-    <p>Welcome! Thanks for visiting. Enjoy the rainbow.</p>
-  </div>
-
-  <script src="assets/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
