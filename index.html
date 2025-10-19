@@ -1,52 +1,107 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমার বই ওয়েবসাইট</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>আমার ওয়েবসাইট</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#home" class="brand">My Site</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Header -->
-    <header>
-        <h1 class="page-title">আমার বইয়ের শিরোনাম</h1>
-        <div class="heart">💔</div>
-    </header>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <h1 class="title">Hello, আমি আরমান</h1>
+      <p class="subtitle">একটি সিম্পল, সুন্দর পার্সোনাল ওয়েবসাইট</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn primary">Learn More</a>
+        <a href="#contact" class="btn outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Main Editable Section -->
-    <main contenteditable="true">
-        এখানে আপনি নিজের মতো করে বাংলা লেখা লিখতে পারবেন।  
-        <br><br>
-        এই জায়গাটা পুরোপুরি editable — তাই বই, আর্টিকেল, বা চিন্তাভাবনা কিছুই হোক না কেন, লিখে ফেলুন।
-    </main>
+  <!-- Editable Content Area -->
+  <section id="content" class="section">
+    <div class="container">
+      <h2 class="animated-header">আজকের ভাবনা</h2>
 
-    <!-- Bottom Message -->
-    <div class="bottom-message" id="bottomMessage">ধন্যবাদ, আপনি এই সাইটে এসেছেন 💖</div>
+      <div class="eq-highlight">
+        <span class="eq-sign">=</span>
+        <span class="eq-text">Sorry, আমায় ভালোবাসলে না 💔</span>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Your Name · All rights reserved</p>
-        <p>Contact: <a href="mailto:you@example.com">you@example.com</a></p>
-        <p>
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">Twitter</a> |
-            <a href="#">YouTube</a> |
-            <a href="#">GitHub</a>
-        </p>
-    </footer>
+      <div class="card content-card" contenteditable="true">
+        <p>এই অংশটি সম্পূর্ণভাবে সম্পাদনাযোগ্য। আপনি এখানে আপনার যে কোনো লেখা, নোট বা চিন্তা লিখতে পারবেন।</p>
+        <p>চাইলে আপনি আরও অনুচ্ছেদ, ছবি বা লিঙ্ক যোগ করতে পারেন। এই জায়গাটি আপনার — ইচ্ছেমতো লিখুন।</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Script file -->
-    <script src="script.js"></script>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="card">
+        <p>আমি একজন ওয়েব নির্মাতা ও সৃজনশীল লেখক। এই সাইটটি GitHub Pages এ ফ্রি হোস্ট করা যায়।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="card contact-card">
+        <p><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Md Arman · All rights reserved</p>
+    <p>Contact: <a href="mailto:you@example.com">you@example.com</a></p>
+  </footer>
+
+  <!-- Bottom Popup -->
+  <div id="bottomPopup" class="bottom-popup">
+    <p>Welcome! Thanks for visiting 🌈</p>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
